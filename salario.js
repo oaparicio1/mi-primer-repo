@@ -8,10 +8,10 @@ function calculoSalario(horas, valorhora){
 
     if(horas > 40){
         var horasextras = horas - 40;
-        var totalordinario = valorhora * 40;
+        let totalordinario = valorhora * 40;
         var recargoextra = valorhora * 1.5;
         var totalextras = recargoextra * horasextras;
-        totaldevengado = totalextras + totalordinario;
+        var totaldevengado = totalextras + totalordinario;
 
     }else{
         var totaldevengado = valorhora * horas;
@@ -32,7 +32,7 @@ function calculoSalario(horas, valorhora){
         return salario;
 }
 
-let res = calculoSalario(45, 2000);
+let res = calculoSalario(40, 2000);
 console.log("Horas Extras: " +res.extras);
 console.log("Recargo por Horas Extras: " +res.recargoext);
 console.log("Total Recargo por Horas Extras: " +res.totalhrextras);
